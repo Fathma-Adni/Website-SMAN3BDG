@@ -1,0 +1,371 @@
+/*----------------------------------BODY----------------------------------*/ 
+body{
+    color: black;
+    background-color: white;
+    font-family:'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+}
+/*---------------------------------HEADER---------------------------------*/
+header{
+    color:white;
+    background-color:#222832;
+    font-family:Arial, Helvetica, sans-serif;
+    margin: 0;
+    margin-left: auto;
+    display: flex;
+    padding: 20px;
+    text-align: center;
+}
+header h1{
+    margin-left: auto;
+    padding: 20px;
+}
+header img{
+    width: 100px;
+}
+/*-----------------------------NAVIGATION BAR-----------------------------*/
+nav{
+    color: white;
+    background-color:#222832;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    margin-left: auto;
+    justify-content: center;
+    align-content: center;
+}
+nav ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: right;
+}
+nav ul li{
+    position: relative;
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 20px;
+    display: block;
+}
+nav ul li a:hover{
+    background-color: #5e6980;
+    border-radius: 15px;
+}
+/*------------------------------NAVBAR PROFIL------------------------------*/
+.dropdown-profil{
+    background-color: white;
+    min-width: 150px;
+    display: none;
+    position: absolute;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+.dropdown-profil li{
+    display: block;
+}
+.dropdown-profil li a{
+    color: #333;
+    text-decoration: none;
+    padding: 12px 16px;
+    display: block;
+    text-align: left;
+    border-bottom: 1px solid #ebebeb;
+}
+.dropdown-profil li a:hover{
+    color: black;
+    background-color: #ebebeb;
+}
+li:hover .dropdown-profil{
+    display: block;
+}
+/*------------------------------NAVBAR BERITA------------------------------*/
+.dropdown-berita{
+    background-color: white;
+    min-width: 150px;
+    display: none;
+    position: absolute;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+.dropdown-berita li{
+    display: block;
+}
+.dropdown-berita li a{
+    color: #333;
+    text-decoration: none;
+    padding: 12px 16px;
+    display: block;
+    text-align: left;
+    border-bottom: 1px solid #ebebeb;
+}
+.dropdown-berita li a:hover{
+    color: black;
+    background-color: #ebebeb;
+}
+li:hover .dropdown-berita{
+    display: block;
+}
+/*---------------------------------BANNER---------------------------------*/
+.banner{
+    background-image: url(Foto/banner.jpeg);
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    height: 500px;
+    color: black;
+    text-align: center;
+    align-content: center;
+    font-size:40pt;
+    font-weight: bold;
+    text-shadow: 3px 3px white;
+}
+h4{
+    color: goldenrod;
+    font-size: 50px;
+    animation: selamatdatang 4s;
+    position: relative;    
+}
+    @keyframes selamatdatang{
+    0%{
+    transform: translateY(50%);
+    opacity: 0;
+    }
+    100%{
+    transform: translateY(0%);
+    opacity: 1;
+    }
+}
+h4:hover{
+    color: rgb(42, 74, 170);
+    transform: scale(1.05);
+}
+/*------------------------------MAIN BERANDA------------------------------*/
+main{
+    padding: 20px;
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+main img{
+    float: left;
+    margin-right: 20px;
+    margin-top: 0px;
+    width: 340px;
+    border-radius: 10px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease;
+}
+main img:hover {
+    transform: translateY(-5px);
+}
+strong{
+    font-family: Arial, Helvetica, sans-serif;
+}
+i{
+    color: gray;
+}
+a {
+    color: navy;
+}
+main h2{
+    color: white;
+    background-color:#222832;
+    line-height: 2;
+    padding: 10px;
+}
+main p{
+    text-align: justify;
+}
+/*----------------------------SECTION BERANDA----------------------------*/
+section{
+    margin: 20px;
+    margin-bottom: 50px;
+}
+section article{
+    background-color: rgb(238, 238, 238);
+    color: black;
+    font-size: 12pt;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+/*----------------------------SECTION BERITA----------------------------*/
+.berita-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin: 20px 0px;
+    margin-top: 40px;
+}
+.berita{
+    flex: 4px;
+    min-width: 300px;
+    background-color: rgb(238, 238, 238);
+    color: black;
+    font-size: 12pt;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease;
+    animation: fadeIn 1s ease;
+}
+.berita:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+.berita h3{
+    color: black;
+    margin-bottom: 15px;
+    border-bottom: 2px solid goldenrod;
+    padding-bottom: 10px;
+}
+.berita p{
+    margin-bottom: 10px;
+}
+/*--------------------------SECTION PRESTASI--------------------------*/
+.prestasi-container{
+    overflow-x: auto;
+    white-space: nowrap;
+    padding: 20px 0;
+    margin: 20px 0;
+    scrollbar-width: thin;
+    scrollbar-color: goldenrod #f0f0f0;
+}       
+.prestasi{
+    display: inline-block;
+    width: 300px;
+    margin-right: 20px;
+    min-height: 650px;
+    vertical-align: top;
+    white-space: normal;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+.prestasi:hover{
+    transform: translateY(-5px);
+}
+.prestasi img{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+.prestasi h3{
+    padding: 15px;
+    margin: 0;
+    background: #222832;
+    color: white;
+    font-size: 18px;
+}
+.prestasi p{
+    padding: 15px;
+    margin: 0;
+    color: #333;
+}
+.prestasi strong{
+    margin-top: 10px;
+    margin-left: 15px;
+    text-align: left;
+}
+/*--------------------------SECTION FASILITAS--------------------------*/
+.fasilitas-container{
+    overflow-x: auto;
+    white-space: nowrap;
+    padding: 20px 0;
+    margin: 20px 0;
+    scrollbar-width: thin;
+    scrollbar-color: goldenrod #f0f0f0;
+}       
+.fasilitas{
+    display: inline-block;
+    width: 300px;
+    min-height: 360px;
+    margin-right: 20px;
+    vertical-align: top;
+    white-space: normal;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+.fasilitas:hover{
+    transform: translateY(-5px);
+}
+.fasilitas img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+.fasilitas h3{
+    padding: 15px;
+    margin: 0;
+    background: #222832;
+    color: white;
+    font-size: 18px;
+}
+.fasilitas p{
+    padding: 15px;
+    margin: 0;
+    color: #333;
+}
+/*-----------------------------SECTION ViDEO-----------------------------*/
+.video-container{
+    overflow-x: auto;
+    white-space: nowrap;
+    padding: 20px 0;
+    margin: 20px 0;
+    scrollbar-width: thin;
+    scrollbar-color: goldenrod #f0f0f0;
+}
+.video{
+    display: inline-block;
+    width: 320px;
+    margin-right: 20px;
+    vertical-align: top;
+    white-space: normal;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+.video:hover{
+    transform: translateY(-5px);
+}
+.video iframe {
+    width: 100%;
+    height: 180px;
+    border: none;
+}
+.video h3{
+    padding: 15px;
+    margin: 0;
+    background: #222832;
+    color: white;
+    font-size: 16px;
+}
+/*--------------------------ASIDE INFO TAMBAHAN--------------------------*/
+aside{
+    background-color:goldenrod;
+    font-family:Arial, Helvetica, sans-serif;
+    padding: 20px;
+    height: 120px;
+    color: white;
+    line-height: 30px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+/*---------------------------------FOOTER---------------------------------*/
+footer{
+    color: white;
+    background-color: rgb(42, 74, 170);
+    font-family:Arial, Helvetica, sans-serif;
+    padding: 15px;
+    margin-top: 10px;
+    text-align: center;
+}

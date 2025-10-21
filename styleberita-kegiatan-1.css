@@ -1,0 +1,170 @@
+/*----------------------------------BODY----------------------------------*/
+ body{
+    color: black;
+    background-color: white;
+    font-family:Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+}
+h2{
+    color: black;
+    text-align: center;
+    font-size: xx-large;
+    margin-top: 40px;
+}
+/*---------------------------------HEADER---------------------------------*/
+header{
+    color:white;
+    background-color:#222832;
+    font-family:Arial, Helvetica, sans-serif;
+    margin: 0;
+    margin-left: auto;
+    display: flex;
+    padding: 20px;
+    text-align: center;
+}
+header h1{
+    margin-left: auto;
+    padding: 20px;
+}
+header img{
+    width: 100px;
+}
+/*-----------------------------NAVIGATION BAR-----------------------------*/
+nav{
+    color: white;
+    background-color:#222832;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    margin-left: auto;
+    justify-content: center;
+    align-content: center;
+}
+nav ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: right;
+}
+nav ul li{
+    position: relative;
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 20px;
+    display: block;
+}
+nav ul li a:hover{
+    background-color: #5e6980;
+    border-radius: 15px;
+}
+/*------------------------------NAVBAR PROFIL------------------------------*/
+.dropdown-profil{
+    background-color: white;
+    min-width: 150px;
+    display: none;
+    position: absolute;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+.dropdown-profil li{
+    display: block;
+}
+.dropdown-profil li a{
+    color: #333;
+    text-decoration: none;
+    padding: 12px 16px;
+    display: block;
+    text-align: left;
+    border-bottom: 1px solid #ebebeb;
+}
+.dropdown-profil li a:hover{
+    color: black;
+    background-color: #ebebeb;
+}
+li:hover .dropdown-profil{
+    display: block;
+}
+/*------------------------------NAVBAR BERITA------------------------------*/
+.dropdown-berita{
+    background-color: white;
+    min-width: 150px;
+    display: none;
+    position: absolute;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+.dropdown-berita li{
+    display: block;
+}
+.dropdown-berita li a{
+    color: #333;
+    text-decoration: none;
+    padding: 12px 16px;
+    display: block;
+    text-align: left;
+    border-bottom: 1px solid #ebebeb;
+}
+.dropdown-berita li a:hover{
+    color: black;
+    background-color: #ebebeb;
+}
+li:hover .dropdown-berita{
+    display: block;
+}
+/*--------------------------------SECTION--------------------------------*/
+img{
+    width: 400px;
+    float: left;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 0px;
+}
+section{
+    margin: 20px;
+    line-height: 50px;
+}
+section article{
+    border: 1px solid #5e6980;
+    background-color: rgb(238, 238, 238);
+    color: grey;
+    font-size: 10pt;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+article{
+    transition: transform 0.3s ease;
+}
+article:hover{
+    transform: translateY(-10px);
+}
+article p{
+    font-size: 15pt;
+    text-align: justify;
+    padding: 20px;
+}
+/*--------------------------ASIDE INFO TAMBAHAN--------------------------*/
+aside{
+    background-color:goldenrod;
+    font-family:Arial, Helvetica, sans-serif;
+    padding: 20px;
+    height: 120px;
+    color: white;
+    line-height: 30px;
+    border-radius: 10px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+/*---------------------------------FOOTER---------------------------------*/
+footer{
+    color: white;
+    background-color: rgb(42, 74, 170);
+    font-family:Arial, Helvetica, sans-serif;
+    padding: 15px;
+    margin-top: 10px;
+    text-align: center;
+}
